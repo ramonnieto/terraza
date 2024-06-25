@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Proyecto Google Cloud - Terraza</title>
+  <link href="{{ url_for('static', path='/css/center.css') }}" rel="stylesheet" />
+  <link href="{{ url_for('static', path='/css/tabla.css') }}" rel="stylesheet" />
+
+<body >
+<h1 class="container"> Raciones Carpe Diem</h1>
+<br><br>
+<form class="container">
+  <table align="center" >
+    <tr>
+    <td>
+    <input type="checkbox" id="racion1" name="racion1" value="raciones">
+    
+    <td>Deliciosas Croquetas Caseras</td>
+    <td>7€</td>
+    <td><img alt="Croquetas caseras" width="150px" height="100px" src="{{ url_for('static', path='/img/racion1.png') }}" /></td>
+</tr>
+    <tr>
+    <td>
+    <input type="checkbox" id="racion2" name="racion2" value="raciones">
+    </td>
+    
+    
+    <td>Hamburguesa 150 gr.</td>
+    <td>8€</td>
+    <td><img alt="Croquetas caseras" width="150px" height="100px"src="{{ url_for('static', path='/img/racion2.png') }}"/></td>
+</tr>
+</table>
+<input type="button" name="enviar" value="Enviar" onclick="enviarAlerta();">
+</form>
+<label for="racion1"> A selecionado Ración 1</label><br> 
+<label for="racion2"> A selecionado Ración 2</label><br>
+
+</body>
+</html>
